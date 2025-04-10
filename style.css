@@ -1,0 +1,103 @@
+:root {
+    --bg: #f4f4f4;
+    --text: #222;
+    --card: #ffffff;
+    --accent: #007bff;
+  }
+  
+  body.dark {
+    --bg: #121212;
+    --text: #f9f9f9;
+    --card: #1e1e1e;
+    --accent: #4dabf7;
+  }
+  
+  body {
+    background-color: var(--bg);
+    color: var(--text);
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    padding: 40px 20px;
+  }
+  
+  .container {
+    background: var(--card);
+    padding: 30px;
+    border-radius: 15px;
+    max-width: 500px;
+    width: 100%;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .input-group {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+  }
+  
+  button {
+    padding: 10px 16px;
+    background-color: var(--accent);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  li {
+    background: var(--bg);
+    border: 1px solid var(--accent);
+    border-radius: 10px;
+    padding: 12px 16px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background 0.3s ease;
+  }
+  
+  li.done {
+    background: #c6f6c6;
+    text-decoration: line-through;
+  }
+  
+  .streak {
+    font-size: 0.85em;
+    color: gray;
+  }
+  
+  .theme-toggle {
+    text-align: right;
+    margin-bottom: 10px;
+  }
+  
+  footer {
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+  footer a {
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--accent);
+  }
+  
